@@ -1,0 +1,25 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js ",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoevik/01movieRecommend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoevik/01movieRecommend/issues"
+  },
+  "homepage": "https://github.com/hoevik/01movieRecommend#readme"
+}
