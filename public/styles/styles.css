@@ -1,3 +1,6 @@
-body {
-  background-color: rgba(255, 0, 0, 0.5);
+.header {
+  background-color: blue;
+  height: 300px;
+  position:absolute;
+  left: 0;
 }
