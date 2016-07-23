@@ -1,6 +1,9 @@
 .header {
   background-color: blue;
   height: auto;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
 }
 .logo {
   margin: auto;
@@ -13,7 +16,10 @@
   height: 60px;
   background-color: green;
 }
-
 .menuElement {
   text-align: center;
+}
+.tester {
+  height: 2000px;
+  background-color: black;
 }
