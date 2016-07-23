@@ -1,7 +1,7 @@
 .header {
   background-color: blue;
   height: 80px;
-  position:absolute;
+ -- abselute value --
 }
 .logo {
   margin: auto;
@@ -9,7 +9,12 @@
   height: 50px;
   width: 500px;
   text-align: center;
+}
+.menu {
+  height: 60px;
+  background-color: green;
+}
 
-
-
+.menuElement {
+  text-align: center;
 }
