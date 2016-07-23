@@ -1,7 +1,6 @@
 .header {
   background-color: blue;
-  height: 80px;
- -- abselute value --
+  height: auto;
 }
 .logo {
   margin: auto;
