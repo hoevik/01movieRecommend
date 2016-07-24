@@ -28,10 +28,13 @@ app.get('/', function homepage (req, res) {
 });
 
 
+
 /*
  * JSON API Endpoints
  */
+app.get('/api', controllers.api.index);
 
+app.get('api/movie', controllers.movies.index);
 
 
 /**********
