@@ -8,6 +8,18 @@ $(document).ready(function() {
       renderMovie(movie);
     });
   });
+
+  $('#movie-form form').on('submit', function(e) {
+  e.preventDefault();
+  var formData = $(this).serialize();
+  console.log('formData', formData);
+  $.post('/api/movies', formData, function(album) {
+    console.log('album after POST', album);
+    renderAlbum(album);  //render the server's response
+  });
+  $(this).trigger("reset");
+});
+
 });
 
 
