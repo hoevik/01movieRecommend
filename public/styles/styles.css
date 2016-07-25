@@ -24,3 +24,10 @@ padding-top: 150px;
 height: 100vh;
 background-color: red;
 }
+.card {
+  margin:50px;
+  height: 100px;
+  width: 40px;
+  background-color: rgba(100, 0, 0, 0.5);
+
+}

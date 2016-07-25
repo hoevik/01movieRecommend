@@ -3,9 +3,10 @@
 var db = require('../models');
 
 
+
 //get api/movies
 function index(req, res){
-  console.log(json);
+    res.json({  message: "Welcome!"});
 }
 
 

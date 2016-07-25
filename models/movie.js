@@ -25,9 +25,5 @@ var mongoose = require('mongoose'),
 
   }); //is this where to insert api-linking
 
-
-
-
-
 var Movie = mongoose.model('Movie', movieSchema);
 module.exports = Movie;
