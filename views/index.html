@@ -15,45 +15,65 @@
     <!-- APPLICATION SCRIPTS -->
     <script src="scripts/app.js"></script>
   </head>
-  </head>
   <body>
-    <header class="header col-md-12">
-      <div class="logo">
-        <h1>Movie recommender :)!</h1>
-      </div>
-      <div class="menu col-md-12">
-        <div class="newSearch menuElement col-md-4">
-          <h3>New search</h3>
-        </div>
-        <div class="starred menuElement col-md-4">
-          <h3>Starred</h3>
-        </div>
-        <div class="user menuElement col-md-4">
-          <h3>Username</h3>
-        </div>
-      </div>
-    </header>
 
-    <div class="searchDiv">
-      <form class="movieSearchForm" action="index.html" method="get">
 
-        <input type="text" name="keywords" placeholder="Wars, star, star wars, lightsaber">
+        <section class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2>Movies</h2>
+            </div>
+          </div>
+          <!-- albums! -->
+          <div id='movies'>
+            <script id='movie-template' type='text/x-handlebars-template'>
+              <!-- one album -->
+              <div class="row movie">
 
-        <input type="text" name="minMinutes" placeholder="120">
+                <div class="col-md-10 col-md-offset-1">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
 
-        <input type="number" name="maxMinutes" placeholder="222">
 
-        <select name="select">
-          <option value="value1">Value 1</option>
-          <option value="value2" selected>Value 2</option>
-          <option value="value3">Value 3</option>
-        </select>
-        <input id="searchName" type="submit" value="Search">
-    </div>
+                    <!-- begin album internal row -->
+                      <div class='row'>
 
-    <div class="card col-md-6 col-md-offset-4"> <!--bootstrap isnt working-->
+                        <div class="col-md-9 col-xs-12">
+                          <ul class="list-group">
+                            <li class="list-group-item">
+                              <h4 class='inline-header'>Title:</h4>
+                              <span class='album-name'>{{Title}}</span>
+                            </li>
 
-    </div>
+                            <li class="list-group-item">
+                              <h4 class='inline-header'>Year:</h4>
+                              <span class='artist-name'>{{Year}}</span>
+                            </li>
+
+                            <li class="list-group-item">
+                              <h4 class='inline-header'>Runtime:</h4>
+                              <span class='album-releaseDate'>{{Runtime}}</span>
+                            </li>
+                          </ul>
+                        </div>
+
+                      </div>
+                      <!-- end of album internal row -->
+
+                      <div class='panel-footer'>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end one album -->
+            </script>
+
+          </div>
+        </section>
+
+
 
   </body>
 </html>
