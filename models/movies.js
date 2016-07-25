@@ -1,7 +1,7 @@
 var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
-  var movieSchema= new Schema({
+  var MovieSchema= new Schema({
     Title: String,
     Year: String,
     Rated: String,
@@ -25,5 +25,5 @@ var mongoose = require('mongoose'),
 
   }); //is this where to insert api-linking
 
-var Movie = mongoose.model('Movie', movieSchema);
+var Movie = mongoose.model('Movie', MovieSchema);
 module.exports = Movie;

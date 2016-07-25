@@ -3,7 +3,7 @@
 
 $(document).ready(function() {
   console.log('app.js is loaded!');
-  $.get('/api').success(function(movies){
+  $.get('/api/movies').success(function(movies){
     movies.forEach(function(movie){
       renderMovie(movie);
     });
