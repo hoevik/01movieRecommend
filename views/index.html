@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Movie Recommendation</title>
+    <title>Fovourite movies</title>
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -16,7 +16,9 @@
     <script src="scripts/app.js"></script>
   </head>
   <body>
-
+    <header class="jumbotron">
+      <h1>Movies!</h1>
+    </header>
 
 
     <section id='movie-form' class="container">
@@ -26,7 +28,8 @@
             <fieldset>
 
     <!-- Form Name -->
-              <legend>Add New Movie</legend>
+    <legend>Add a new movie</legend>
+              <div id="hide-form">
 
               <!-- Text input-->
               <div class="form-group">
@@ -37,31 +40,32 @@
                 </div>
               </div>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="Year">Year</label>
-                <div class="col-md-4">
-                <input id="releaseYear" name="Year" type="text" placeholder="" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="Year">Year</label>
+                  <div class="col-md-4">
+                  <input id="releaseYear" name="Year" type="text" placeholder="" class="form-control input-md">
 
+                  </div>
                 </div>
-              </div>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="Runtime">Runtime</label>
-                <div class="col-md-4">
-                <input id="movieLength" name="Runtime" type="text" placeholder="123 min" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="Runtime">Runtime</label>
+                  <div class="col-md-4">
+                  <input id="movieLength" name="Runtime" type="text" placeholder="123 min" class="form-control input-md">
 
+                  </div>
                 </div>
-              </div>
 
-              <!-- Button -->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="singlebutton">Save Album</label>
-                <div class="col-md-4">
+                <!-- Button -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label" for="singlebutton">Save Album</label>
+                  <div class="col-md-4">
                   <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
                 </div>
               </div>
+            </div>
             </fieldset>
           </form>
         </div>
@@ -75,7 +79,7 @@
         <section class="container">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <h2>Movies</h2>
+              <h2>List of added movies</h2>
             </div>
           </div>
           <!-- movies! -->
@@ -89,9 +93,8 @@
                     <div class="panel-body">
 
 
-                    <!-- begin movies internal row -->
+                    <!-- begin movi internal row -->
                       <div class='row'>
-
                         <div class="col-md-9 col-xs-12">
                           <ul class="list-group">
                             <li class="list-group-item">
@@ -110,7 +113,6 @@
                             </li>
                           </ul>
                         </div>
-
                       </div>
                       <!-- end of album internal row -->
 

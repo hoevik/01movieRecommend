@@ -1,5 +1,10 @@
 //Client-side js
 
+// var template;
+// var $moviesList;
+// var allMovies = [];
+var counter =0;
+
 
 $(document).ready(function() {
   console.log('app.js is loaded!');
@@ -22,17 +27,42 @@ $(document).ready(function() {
 
      $('#movies').on('click', '.delete-movie', handleDeleteMovieClick);
 
+
+     $('legend').click(function() {
+
+        if(counter%2===0){
+          $( "#hide-form" ).hide('slow', function(){
+            console.log('hide');
+          });
+        } else if(counter%2!==0)
+          $( "#hide-form" ).show('slow', function(){
+            console.log('show');
+        });
+
+        counter ++;
+});
+
+
 });
 
 function handleDeleteMovieClick(e) {
-  var movieId = $(this).parents('.movie').data('movie-id');
+  var movieId = $(this).parent('#movie').data('movie-id');
   console.log('someone wants to delete movie id=' + movieId );
+
   $.ajax({
     url: '/api/movies/' + movieId,
     method: 'DELETE',
     success: handleDeleteMovieSuccess
   });
 }
+
+// callback after DELETE /api/movie/:id
+function handleDeleteMovieSuccess(data) {
+  var deletedMovieId = data._id;
+  console.log('removing the following movie from the page:', deletedMovieId);
+  $('div[data-movie-id=' + deletedMovieId + ']').remove();
+}
+
 
 
 function renderMovie(movie) {

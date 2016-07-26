@@ -37,11 +37,10 @@ app.get('/', function homepage (req, res) {
 app.get('/api', controllers.api.index);
 
 app.get('/api/movies', controllers.movies.index);
-// app.get('/api/movies/:albumsId', controllers.movies.show);
+app.get('/api/movies/:moviesId', controllers.movies.show);
 app.post('/api/movies', controllers.movies.create);
 app.delete('/api/movies/:movieId', controllers.movies.destroy);
-
-
+app.put('/api/movies/:movieId', controllers.movies.update);
 /**********
  * SERVER *
  **********/

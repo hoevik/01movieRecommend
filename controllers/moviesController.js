@@ -24,11 +24,20 @@ function create(req, res) {
     res.json(movie);
   });
 }
+function show(req, res) {
+  db.Movie.findById(req.params.movieId, function(err, foundMovie) {
+    if(err) { console.log('moviesController.show error', err); }
+    console.log('moviesController.show responding with', foundMovie);
+    res.json(foundMovie);
+  });
+}
+
+
 
 function destroy(req, res) {
   db.Movie.findOneAndRemove({ _id: req.params.movieId }, function(err, foundMovie){
     // note you could send just send 204, but we're sending 200 and the deleted entity
-    res.json(foundAlbum);
+    res.json(foundMovie);
   });
 }
 
@@ -38,8 +47,8 @@ function destroy(req, res) {
 module.exports = {
   index: index,
   create: create,
-   destroy: destroy
-  // show: show,
+   destroy: destroy,
+   show: show
   // destroy: destroy,
   // update: update
 };
