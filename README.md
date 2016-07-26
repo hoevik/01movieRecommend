@@ -4,7 +4,7 @@ The main goal of the project vas a full woking app to search for reccomended mov
 Heroku link that does not work: https://vast-wave-21220.herokuapp.com/
 
 ## Planned wireframe
-![wireframe](http://imgur.com/a/UHch3)
+http://imgur.com/a/UHch3
 
 ## Technologies Used
 -HTML
