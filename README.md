@@ -4,19 +4,20 @@ The main goal of the project vas a full woking app to search for reccomended mov
 Heroku link that does not work: https://vast-wave-21220.herokuapp.com/
 
 ## Planned wireframe
+
 http://imgur.com/a/UHch3
 
 ## Technologies Used
--HTML
--CSS
--JavaScript
--JQuery
--Handlebars
--Bootstrap
--Express
--Node.js
--Mongoose
--MongoDB
+*HTML
+*CSS
+*JavaScript
+*JQuery
+*Handlebars
+*Bootstrap
+*Express
+*Node.js
+*Mongoose
+*MongoDB
 
 ## Existing Features
 User can insert data and have it showed on screen instanty.
@@ -25,9 +26,9 @@ Click on delete button, and it will to try deleting something, but the id is und
 
 
 ## Planned Features
--Make deletebutton work
--Make Edit work
--Integrate users
--integrate a search form for movies
--Add more features to submit about the movies, like imgs, rating..
--connect to app to the imbd-api and display data like poster, ratings, actors and stuff..
+*Make deletebutton work
+*Make Edit work
+*Integrate users
+*integrate a search form for movies
+*Add more features to submit about the movies, like imgs, rating..
+*connect to app to the imbd-api and display data like poster, ratings, actors and stuff..
