@@ -24,6 +24,16 @@ $(document).ready(function() {
 
 });
 
+function handleDeleteMovieClick(e) {
+  var movieId = $(this).parents('.movie').data('movie-id');
+  console.log('someone wants to delete movie id=' + movieId );
+  $.ajax({
+    url: '/api/movie/' + albumId,
+    method: 'DELETE',
+    success: handleDeleteMovieSuccess
+  });
+}
+
 
 function renderMovie(movie) {
   console.log('rendering movie', movie);
