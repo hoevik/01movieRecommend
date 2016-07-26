@@ -19,6 +19,9 @@ $(document).ready(function() {
     });
     $(this).trigger("reset");
     });
+
+     $('#movies').on('click', '.delete-movie', handleDeleteMovieClick);
+
 });
 
 
