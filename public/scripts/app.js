@@ -10,16 +10,15 @@ $(document).ready(function() {
   });
 
   $('#movie-form form').on('submit', function(e) {
-  e.preventDefault();
-  var formData = $(this).serialize();
-  console.log('formData', formData);
-  $.post('/api/movies', formData, function(album) {
-    console.log('album after POST', album);
-    renderAlbum(album);  //render the server's response
-  });
-  $(this).trigger("reset");
-});
-
+    e.preventDefault();
+    var formData = $(this).serialize();
+    console.log('formData', formData);
+    $.post('/api/movies', formData, function(movie) {
+      console.log('movie after POST', movie);
+      renderMovie(movie);  //render the server's response
+    });
+    $(this).trigger("reset");
+    });
 });
 
 
