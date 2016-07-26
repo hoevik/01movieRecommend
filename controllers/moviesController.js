@@ -10,9 +10,24 @@ function index(req, res) {
   });
 }
 
+//
+function create(req, res) {
+console.log('body', req.body);
+db.Movie.create(req.body, function(err, movie) {
+    if (err) { console.log('error', err); }
+    console.log(movie);
+    res.json(movie);
+  });
+}
+
+
 
 
 // export public methods here
 module.exports = {
-  index: index
+  index: index,
+  create: create
+  // show: show,
+  // destroy: destroy,
+  // update: update
 };
