@@ -1,6 +1,11 @@
 ## Favorite movies
 The main goal of the project vas a full woking app to search for reccomended movies. The result was an app that lets the user insert data, and have it displayed with Jquery.
 
+Heroku link that does not work: https://vast-wave-21220.herokuapp.com/
+
+## Planned wireframe
+![wireframe](public/images/wireframe.jpg)
+
 ## Technologies Used
 -HTML
 -CSS
