@@ -28,7 +28,7 @@ function handleDeleteMovieClick(e) {
   var movieId = $(this).parents('.movie').data('movie-id');
   console.log('someone wants to delete movie id=' + movieId );
   $.ajax({
-    url: '/api/movie/' + albumId,
+    url: '/api/movies/' + movieId,
     method: 'DELETE',
     success: handleDeleteMovieSuccess
   });
